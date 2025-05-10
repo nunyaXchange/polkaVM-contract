@@ -1,6 +1,9 @@
 #![no_main]
 #![no_std]
 
+pub mod handlers;
+pub mod types;
+
 use uapi::{HostFn, HostFnImpl as api, ReturnFlags};
 
 #[panic_handler]
